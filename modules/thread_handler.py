@@ -4,7 +4,7 @@ from modules.server import Server
 
 def spool_up(doJoin):
     if doJoin:
-        connectTo = input("Enter address (address:port), or enter 'h' for host only mode: ")
+        connectTo = input("Enter address (address:port): ")        
         if connectTo == "":
             connectTo = "2.tcp.ngrok.io:14583"
         host = connectTo.split(":")[0]
