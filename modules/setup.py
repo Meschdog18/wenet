@@ -1,3 +1,5 @@
+
+
 #setup flow
 def choice():
     print("Would you like to start a new network or join a network?")
@@ -15,4 +17,3 @@ def new():
     print("new network")
 def join():
     print("join network")
-    
