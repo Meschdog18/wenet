@@ -8,8 +8,6 @@ def spool_up():
         connectTo = "2.tcp.ngrok.io:14583"
     host = connectTo.split(":")[0]
     port = connectTo.split(":")[1]
-    print(host)
-    print(port)
     myclient = Client(host, int(port))
     myserver = Server("localhost", 8000)
 
