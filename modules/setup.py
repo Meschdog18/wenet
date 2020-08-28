@@ -1,4 +1,4 @@
-
+from modules.thread_handler import spool_up
 
 #setup flow
 def choice():
@@ -7,13 +7,16 @@ def choice():
     print("Type J, to join a network")
     ine = input()
     if ine.lower() == "n":
-        pass
+        new()
     if ine.lower() == "j":
-        print("ok")
+        join()
     else:
         print("INVALID INPUT")
         choice()
+
 def new():
     print("new network")
+    spool_up(False)
 def join():
     print("join network")
+    spool_up(True)
